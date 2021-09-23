@@ -1,11 +1,21 @@
 
 
 const navbar = document.querySelector('nav');
-const navbarToggler = document.querySelector('.fa-bars');
+const navbarToggler = document.querySelector('.toggler');
+const windowWidth = window.innerWidth;
+const linkUnderlined = document.querySelectorAll(".underline");
+console.log(windowWidth);
+
+if(windowWidth < 1140) {
+  [].forEach.call(linkUnderlined, function(link) {
+    link.classList.remove("underline");
+});
+};
 
 //navbar toggle
 navbarToggler.addEventListener("click", function() {
   const toggleMenu = document.querySelector('#toggleMenu');
+  navbarToggler.classList.toggle("toggler-animated");
   toggleMenu.classList.toggle("toggleMenu");
 });
 //navbar toggle end

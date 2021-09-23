@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,92 +20,47 @@
     <header>
         <!--Navbar-->
         <nav class="transformY fixed-top">
-                
+            
             <span class="nav-header">
-                <a href="index.html">MyFood</a>
-                <div id="toggler">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+              <a href="index.html"><img class="img-" width="50px" src="media/imgs/blueline.png" alt="logo"></a>
+              <div class="toggler">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
             </span>
-
             <ul id="toggleMenu" class="disapear toggleMenu">
-            <li class="faded"><a href="index.html">acasă</a></li>
-            <li class="faded"><a href="#section-trenduri">trenduri</a></li>
-            <li class="faded"><a href="meniu.html">meniu</a></li>
-            <li class="faded"><a href="banchete.html">banchete</a></li>
-            <li class="faded"><a href="evenimente.html">evenimente</a></li>
-            <li class="faded"><a href="#section">contacte</a></li> 
-            <li class="faded"><a href="#">oferte</a></li>
-            <li class="faded" id="sm-links">
+              <li class="translated faded"><a class="underline" href="index.html">home</a></li>
+              <li class="translated faded"><a class="underline" href="#section-trenduri">joburi</a></li>
+              <li class="translated faded"><a class="underline" href="meniu.html">compania</a></li>
+              <li class="translated faded"><a class="underline" href="banchete.html">echipa</a></li>
+              <li class="translated faded"><a class="underline" href="evenimente.html">contacte</a></li>
+              <li class="faded" id="sm-links">
                 <a href="#"><i class="fab fa-facebook-messenger"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>         
+              </li>         
             </ul>
         </nav>
-
-        <script>
-
-        const navbar = document.querySelector('nav');
-        const navbarToggler = document.querySelector('.fa-bars');
-
-        //navbar toggle
-        navbarToggler.addEventListener("click", function() {
-            const toggleMenu = document.querySelector('#toggleMenu');
-            toggleMenu.classList.toggle("toggleMenu");
-        });
-        //navbar toggle end
-        
-        //navbar animated
-        
-
-        window.addEventListener("scroll", function() {
-            var top = window.scrollY;
-            const height = window.innerHeight;
-
-            if (top > height/4) {
-            navbar.classList.add("nav-switch");
-            
-            } else {
-            navbar.classList.remove("nav-switch");
-            }
-        });
-
-        
-
-
-        window.addEventListener("load", function() {
-            navbar.classList.remove("transformY");
-
-            
-            let listOrder = -1;
-            const links = document.querySelectorAll('li');
-            var interval = setInterval(frame, 100);
-            var length = links.length;
-            
-            
-            function frame( ) {
-            if (listOrder == length-1) {
-                clearInterval(interval);
-            } else {
-                listOrder++;
-                links[listOrder].classList.remove("faded");
-            }
-            }
-            
-
-
-        });
-
-        
-        //navbar animated end
-        
-        </script>
         <!--/Navbar-->
 
+        <section id="showcase">
+            <video src="media/video/background-video.mov" muted loop autoplay></video>
+            <div class="overlay">
+                <div id="hero">
+                    <h1>Full-service software development company</h1>
+                    <span>Build world-class digital products with a team of design, development and strategy experts. All in one place.</span>
+
+                    <div class="btn-container">
+                        <button class="btn btn-hr" type="button">get hired</button>
+                        <button class="btn btn-contact" type="button">contact us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
+    
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
