@@ -50,7 +50,7 @@
         <section id="showcase">
             <video src="media/video/background-video.mov" muted loop autoplay></video>
             <div class="overlay">
-                <div id="hero">
+                <div data-aos="fade-up" id="hero">
                     <h1>Full-service software development company</h1>
                     <span>Build world-class digital products with a team of design, development and strategy experts. All in one place.</span>
 
@@ -118,7 +118,7 @@
     <!--Info Section end-->
 
     <!--section Jobs-->
-    <section onmouseover="scrollAppear()" id="jobs">
+    <section onmouseover="mouseOverAppear()" id="jobs-section">
       <div class="container">
         <div class="row">
 
@@ -148,39 +148,143 @@
       <script src="script/jobs.js"></script>
     </section>
     <!--section Jobs end-->
+    
 
+    <section id="brands">
+      <img width="130px" src="media/imgs/brands/Lipton-Logo-1972-2002.png" alt="lipton">
+      <img width="150px" src="media/imgs/brands/nestle-logo-black-and-white.png" alt="nestle">
+      <img width="150px" src="media/imgs/brands/Pepsi-Logo.png" alt="pepsi">
+      <img width="100px" src="media/imgs/brands/Volkswagen_Logo_till_1995.svg.png" alt="volkswagen">
+      <img width="100px" src="media/imgs/brands/Yamaha-Logo.png" alt="yamaha">
+    </section>
+
+    <!--section Experts-->
     <section id="experts">
       <section id="top">
         <div class="sides left">
-          <h3>
-            <span>Experts</span>
-            <span>in</span>
-            <span>every</span> 
-            <span>aspect</span> 
-            <span>of</span>
-            <span>the</span>
-            <span>product</span>
-            <span>lifecycel</span>
-          </h3>
+          <div class="content">
+            <h3 data-aos="fade-up"
+            data-aos-duration="2000">
+              <span style="color: #0697D4;">Experts</span> in every aspect of product lyfecycle.
+            </h3>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cum facilis impedit hic. Sequi corporis voluptatem accusamus labore ipsam, placeat provident praesentium alias neque nulla rerum veritatis, fuga, impedit suscipit?</p>
-        
+            <p data-aos="fade-up"
+            data-aos-duration="2000">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cum facilis impedit hic. Sequi corporis voluptatem accusamus labore ipsam.
+            </p>
+          </div>
+
+          <div class="images-grid">
+
+            <div class="left-imgs" data-aos="fade-right">
+              <div class="img" style="background-image: url(media/imgs/img-grid/yes.jpg);"></div>
+              <div class="img" style="background-image: url(media/imgs/img-grid/app.jpg);"></div>
+            </div>
+
+            <div class="right-imgs" data-aos="fade-left">
+              <div class="img" style="background-image: url(media/imgs/img-grid/team.jpg);"></div>
+              <div class="gradient"></div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="sides right">
-          <div class="exp-elem"></div>
-          <div class="exp-elem"></div>
-          <div class="exp-elem"></div>
+        <div class="sides right expert-container">
+          
+          
+          
         </div>
 
       </section>
 
-      <section id="bottom">
-        
-      </section>
-
+      
       <script src="script/experts.js"></script>
     </section>
+    <!--section Experts end-->
+
+    <!--section Testemonial-->
+    <section id="testemonials">
+      <span data-aos="fade-up">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, fuga assumenda? Ipsam vitae dolore nisi adipisci mollitia officiis ipsum quia pariatur."</span>
+      <span class="name" data-aos="fade-up">Vadim Ciupitu</span>
+      <p data-aos="fade-up"> CEO of SRL "Vadim Ciupitu" <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis laboriosam modi, voluptate!</p>
+    </section>
+    <!--section Testemonial end-->
+
+    <div class="divider">
+      <span 
+      data-aos="fade-up"
+      data-aos-duration="2000">
+      More than 10 years in the game and we're just getting started. 
+      </span>
+    </div>
+
+    <!--Contact form-->
+    <section id="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="left-side col-lg-6">
+            <div class="question-container">
+              <div class="ceo-img" style="background-image: url(media/imgs/ceo.jpeg);" data-aos="fade-right" data-aos-duration="1000"></div>
+              <span class="name" data-aos="fade-right" data-aos-duration="1000">Nume Prenume</span> <span data-aos="fade-right">Blueline CEO</span> <br>
+              <span class="question" data-aos="fade-right" data-aos-duration="1000">Want to talk about your project?</span>
+            </div>
+          </div>
+          <div class="right-side col-lg-6">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="max-height:100px; min-height:100px;"></textarea>
+          
+              <button type="submit">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact form end-->
+
+    <footer>
+      <div class="container">
+      <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+      <h2 class="footer-heading"><a href="index.html" class="logo"><img width="300px" src="media/imgs/blueline.png" alt=""></a></h2>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Agent</a>
+        <a href="#">About</a>
+        <a href="#">Listing</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <ul class="ftco-footer-social p-0">
+        <li><a href="#"><i class="fab fa-facebook-messenger"></a></i></li>
+        <li><a href="#"><i class="fab fa-instagram"></a></i>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="row mt-5">
+      <div class="col-md-12 text-center">
+      <p class="copyright">
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+      </p>
+      </div>
+      </div>
+      </div>
+    </footer>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

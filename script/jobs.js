@@ -41,16 +41,18 @@ const jobs = [
       icon: "fab fa-java"
     },
   
-  ]
+];
+const jobsSection = document.querySelector("#jobs-section");
+const jobsContainer = document.querySelector(".jobs-container");
 
 //display Jobs 
 window.addEventListener("DOMContentLoaded", function() {
-    displayJobs(jobs);
+    displayJobItems(jobs);
 });
   
   
-function displayJobs(jobs) {
-    let displayJobsGrid = jobs.map(function(item) {
+function displayJobItems(jobItems) {
+    let displayJobs = jobItems.map(function(item) {
   
         return `<div class="job-faded job-element flip-card">
                     <div class="flip-card-inner">
@@ -70,18 +72,17 @@ function displayJobs(jobs) {
                 
     })
   
-    displayMenu = displayJobsGrid.join("");
-    jobsContainer.innerHTML = displayMenu;
+    displayJobs = displayJobs.join("");
+    jobsContainer.innerHTML = displayJobs;
 };
 
 //jobs animated
 
-const jobSection = document.querySelector("#jobs");
 
-function scrollAppear() {
+function mouseOverAppear() {
 
-    var jobBox = document.querySelector(".jobs-container");
-    var jobPosition = jobBox.getBoundingClientRect().top;
+    
+    var jobPosition = jobsContainer.getBoundingClientRect().top;
     var screenPosition = window.innerHeight;
     const jobElements = document.querySelectorAll(".job-element");
 
@@ -107,5 +108,5 @@ function scrollAppear() {
     
 };
 
-jobs.addEventListener("onmouseover", scrollAppear);
+jobsSection.addEventListener("onmouseover", mouseOverAppear);
 

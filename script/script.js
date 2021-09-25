@@ -5,8 +5,7 @@ const navbarToggler = document.querySelector('.toggler');
 const windowWidth = window.innerWidth;
 const linkUnderlined = document.querySelectorAll(".underline");
 const secondSectionBackground = document.querySelector(".background");
-const jobsContainer = document.querySelector(".jobs-container");
-const jobElements = document.querySelectorAll(".job-element");
+
 
 
 
