@@ -13,26 +13,26 @@ const experts = [
 
     {
         id: "03",
-        tittle: "Product Design",
-        background: "sketching.jpg"
+        tittle: "web development",
+        background: "web-development.jpg"
     },
 
     {
         id: "04",
-        tittle: "Product Design",
-        background: "sketching.jpg"
+        tittle: "mobile development",
+        background: "mobile-app.jpg"
     },
 
     {
         id: "05",
-        tittle: "Product Design",
-        background: "sketching.jpg"
+        tittle: "support and management",
+        background: "management.jpg"
     },
 
     {
         id: "06",
-        tittle: "Product Design",
-        background: "sketching.jpg"
+        tittle: "machine learning and digital transformation",
+        background: "machine-learning.jpg"
     },
 ];
 
